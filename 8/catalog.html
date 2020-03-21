@@ -2,13 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Техномарт</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/min-normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <base href="https://htmlacademy-htmlcss.github.io/1313067-technomart-27/8/">
 </head>
   <body>
-    <!-- Здесь хедер макета -->
     <header class="page-header">
       <div class="head-navigation-wrapper">
         <div class="head-navigation container">
@@ -46,18 +46,18 @@
         <div class="user-menu">
           <ul class="log-in list-styles-reset">
             <li>
-              <a class="user-name" href="#">Равшан Джамшутович </a>
+              <a class="user-name" href="account.html">Равшан Джамшутович </a>
             </li>
             <li>
-              <button class="logout" type="button">
-                Выйти
+              <a  class="logout" href="logout.html">
+                <span class="visually-hidden">Выйти</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
-                  <g fill="#32425C">
+                  <g fill="#c5c5c5">
                       <path d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
                       <path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/>
                   </g>
-              </svg>
-              </button>
+                </svg>
+              </a>
             </li>
             <li>
               <a class="orders" href="#">Мои заказы</a>
@@ -76,7 +76,7 @@
           <li>
             <a href="#">Компания</a>
           </li>
-          <li>
+          <li class="main-navigation-current" >
             <a href="catalog.html">Каталог</a>
           </li>
           <li>
@@ -94,7 +94,6 @@
         </ul>
       </nav>
     </header>
-    <!-- Здесь будет основной контент -->
     <main>
       <div class="container">
         <div>
@@ -215,7 +214,6 @@
                 </li>
               </ul>
             </section>
-            <!--        -               -               -               -               -        -->
             <section>
               <h2 class="visually-hidden">Каталог</h2>
               <ul class="product-listing list-styles-reset">
@@ -243,8 +241,7 @@
                   <div class="product-discount">30500 Р.</div>
                   <div class="product-price">25500 Р.</div>
                 </li>
-                <li class="catalog-product">
-                  <div class="flag-new">New</div>
+                <li class="catalog-product new-in">
                   <div class="product-action">
                     <a class="buy" href="#">Купить</a>
                     <a class="bookmark" href="#">В закладки</a>
@@ -268,8 +265,7 @@
                   <div class="product-discount">22500 Р.</div>
                   <div class="product-price">15500 Р.</div>
                 </li>
-                <li class="catalog-product">
-                  <div class="flag-new">New</div>
+                <li class="catalog-product new-in">
                   <div class="product-action">
                     <a class="buy" href="#">Купить</a>
                     <a class="bookmark" href="#">В закладки</a>
@@ -293,8 +289,7 @@
                   <div class="product-discount"></div>
                   <div class="product-price">12500 Р.</div>
                 </li>
-                <li class="catalog-product">
-                  <div class="flag-new">New</div>
+                <li class="catalog-product new-in">
                   <div class="product-action">
                     <a class="buy" href="#">Купить</a>
                     <a class="bookmark" href="#">В закладки</a>
@@ -358,7 +353,6 @@
         </section>
       </div>
     </main>
-    <!-- Здесь фтуер макета -->
     <footer>
       <div class="footer-info-wrapper">
         <div class="footer-info container">
@@ -454,7 +448,6 @@
         </div>
       </div>
     </footer>
-
     <section class="modal modal-purchase">
       <h2 class="visually-hidden">Товар добавлен в корзину!</h2>
       <div class="purchase-title">
@@ -466,6 +459,6 @@
       </div>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    
+    <script src="/js/min-purchase.js"></script>
   </body>
 </html>
